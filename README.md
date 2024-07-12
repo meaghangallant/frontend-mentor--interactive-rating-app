@@ -1,7 +1,7 @@
 ### To Do List
 
-- [] Center the app component in the center of the page
-- [] Figure out styling so there aren't height and width scroll bars to the main page...
+- [X] Center the app component in the center of the page
+- [X] Figure out styling so there aren't height and width scroll bars to the main page...
 - [] Create JS script to change styling for selected rating element 
 - [] Create JS script that selects and deselects a rating element
 - [] Create JS script that allows only *one* rating element to be selected at a time
