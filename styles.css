@@ -7,6 +7,76 @@
 }
 
 body {
+  color: var(--light-gray);
+  background-color: var(--very-dark-blue);
   font-size: 15px;
   font-family: "Overpass", sans-serif;
+  line-height: 1.5em;
+  height: 100vh;
+}
+
+h1 {
+  color: var(--white);
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.rating {
+  background-color: var(--dark-blue);
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 5px;
+  padding: 18px;
+  border-radius: 50%;
+  text-align: center;
+  font-weight: 700;
+}
+
+button {
+  color: var(--very-dark-blue);
+  background-color: var(--primary);
+  width: 100%;
+  border-radius: 30px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 12px;
+  margin-top: 30px;
+}
+
+#app-container {
+  background: linear-gradient(180deg, hsla(213, 20%, 18%, 1) -50%, hsla(216, 12%, 8%, .5) 150%);
+  margin: auto;
+  padding: 35px;
+  width: 350px;
+  border-radius: 30px;
+}
+
+#rating-state img {
+  background-color: var(--dark-blue);
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  padding: 18px;
+  border-radius: 50%;
+  margin-bottom: 36px;
+}
+
+#thank-you-state {
+  display: none;
+}
+
+/*
+#rating-state {
+  display: none;
+}
+*/
+
+#attribution {
+  background-color: var(--very-dark-blue);
+  position: absolute;
+  bottom: 1px;
+  margin: auto;
 }
