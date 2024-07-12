@@ -1,3 +1,13 @@
+### To Do List
+
+- [] Center the app component in the center of the page
+- [] Figure out styling so there aren't height and width scroll bars to the main page...
+- [] Create JS script to change styling for selected rating element 
+- [] Create JS script that selects and deselects a rating element
+- [] Create JS script that allows only *one* rating element to be selected at a time
+- [] Create a JS script that changes the app state from rating to thank-you when submit button clicked
+- [] Create a JS script that pushes user rating to the thank you state text
+
 ### What I Learned 
 
 #### Lesson 1
