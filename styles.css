@@ -81,9 +81,11 @@ button:hover {
   margin-bottom: 36px;
 }
 
+/*
 #rating-state {
   display: none;
 }
+*/
 
 
 /* ----- THANK YOU STATE STYLES ----- */
@@ -103,11 +105,11 @@ button:hover {
   margin-bottom: 50px;
 }
 
-/*
+
 #thank-you-state {
   display: none;
 }
-*/
+
 
 
 /* ----- ATTRIBUTION STYLES ----- */
