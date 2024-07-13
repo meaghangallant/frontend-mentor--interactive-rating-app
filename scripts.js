@@ -1,7 +1,22 @@
+// Selected rating id >>> #selectedRating
 
-//Select rating 1
-function selectRating() {
-  let rate1 = document.getElementById('rate-1');
-  rate1.style.color = 'var(--very-dark-blue)';
-  rate1.style.backgroundColor = 'var(--white)';
-}
+const getElements = document.querySelectorAll(".rating")
+console.log(getElements)
+
+getElements.forEach(rating => {
+  rating.addEventListener("click", () => {
+    let ratingArray = Array.from(getElements);
+    let num = ratingArray.indexOf(rating);
+  
+    console.log(num);
+    console.log(getElements[num])
+    
+
+  })
+})
+
+
+
+
+
+

@@ -29,3 +29,19 @@ shout out to me banging my head against a wall for an hour trying to figure out 
 
 #### Lesson 3
 You should probablly save any/all code progress even -- if not ESPECIALLY -- code that isn't working (please see above lesson (happy tear emoji) )
+
+#### Lesson 4 
+
+- .querySelector() returns the first element from the DOM matching the query 
+- .querySelectorAll() returns a static [NodeList](https://developer.mozilla.org/en-US/docs/Web/API/NodeList) of all elements matching the query 
+  - query must match css selector so: ".class" and "#id" 
+  - from NodeList MDN Web Docs:
+    "Although NodeList is not an Array, it is possible to iterate over it with forEach(). It can also be converted to a real Array using Array.from()."
+- .getElementsByClassName() returns a live [HTMLCollection](https://developer.mozilla.org/en-US/docs/Web/API/HTMLCollection) (an "array-like object") of all child elements with the specified class name
+
+
+#### Lesson 5 
+
+I HAVE SPENT HOURS AND HOURS BANGING MY HEAD TRYING TO GET THIS TO WORK AND ALL I HAD TO DO WAS MOVE THE SCRIPT TAG TO THE END OF THE DOCUMENT INSTEAD OF HAVING IT IN THE HEAD OF THE HTML DOC
+
+FUUUUCCCKKKKK, thats annoying

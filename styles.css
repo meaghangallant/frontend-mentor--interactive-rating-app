@@ -37,6 +37,22 @@ h1 {
 
 /* ----- RATINE STATE STYLES ----- */
 
+/*
+#rating-state {
+  display: none;
+}
+*/
+
+#rating-state img {
+  background-color: var(--dark-blue);
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  padding: 18px;
+  border-radius: 50%;
+  margin-bottom: 36px;
+}
+
 .rating {
   background-color: var(--dark-blue);
   display: inline-block;
@@ -52,6 +68,11 @@ h1 {
 .rating:hover {
   color: var(--very-dark-blue);
   background-color: var(--primary); 
+}
+
+#selectedRating {
+  color: var(--very-dark-blue);
+  background-color: var(--white);
 }
 
 button {
@@ -71,27 +92,12 @@ button:hover {
   background-color: var(--white);
 }
 
-#rating-state img {
-  background-color: var(--dark-blue);
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  padding: 18px;
-  border-radius: 50%;
-  margin-bottom: 36px;
-}
-
-/*
-#rating-state {
-  display: none;
-}
-*/
-
 
 /* ----- THANK YOU STATE STYLES ----- */
 
 #thank-you-state {
   text-align: center;
+  display: none;
 }
 
 #user-rating {
@@ -104,13 +110,6 @@ button:hover {
   margin-top: 30px;
   margin-bottom: 50px;
 }
-
-
-#thank-you-state {
-  display: none;
-}
-
-
 
 /* ----- ATTRIBUTION STYLES ----- */
 #attribution {
