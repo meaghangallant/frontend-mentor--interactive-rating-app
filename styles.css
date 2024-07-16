@@ -131,13 +131,12 @@ button:hover {
 
 /* ----- ATTRIBUTION STYLES ----- */
 
-
-/*
 #attribution {
   background-color:hsla(213, 19%, 18%, .5);
   position: absolute;
   bottom: 0;
   margin: 0;
+  padding-block: 1em;
   text-align: center;
   width: 100%;
 
@@ -147,7 +146,6 @@ button:hover {
   color: var(--light-gray);
 }
 
-*/
 
 
 /* ----- MOBILE STYLES ----- */
