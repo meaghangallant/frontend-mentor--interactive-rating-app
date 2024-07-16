@@ -1,17 +1,39 @@
-### To Do List
+# Frontend Mentor - Interactive rating component solution
 
-- [X] Center the app component in the center of the page
-- [X] Figure out styling so there aren't height and width scroll bars to the main page...
-- [] Create JS script to change styling for selected rating element 
-- [] Create JS script that selects and deselects a rating element
-- [] Create JS script that allows only *one* rating element to be selected at a time
-- [] Create a JS script that changes the app state from rating to thank-you when submit button clicked
-- [] Create a JS script that pushes user rating to the thank you state text
+This is a solution to the [Interactive rating component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+
+## Table of contents
+
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+
+## Overview
+
+### The challenge
+
+Users should be able to:
+
+- View the optimal layout for the app depending on their device's screen size
+- See hover states for all interactive elements on the page
+- Select and submit a number rating
+- See the "Thank you" card state after submitting a rating
+
+## My process
+
+### Built with
+
+- HTML
+- CSS
+- Javascript
 
 ### What I Learned 
 
 #### Lesson 1
-That you can use negative values and extend past 100% when creating gradients (mind blown emoji here). I am so excited to have figured out this part and be able to replicate it from the imahe!! #veryproud
+
+That you can use negative values and extend past 100% when creating gradients (mind blown emoji here). I am so excited to have figured out this part and be able to replicate it from the image!! #veryproud
 
 ```CSS
 #app-container {
@@ -20,15 +42,17 @@ That you can use negative values and extend past 100% when creating gradients (m
 ```
 
 #### Lesson 2
+
 CHECK YOUR SPELLING, CHECK YOUR SPELLING, CHECK YOUR SPELLING 
-AND!!! >>> Check your letter casing!
+
 ALSO!!!!!! >>> triple check you are using the correct name of the method/property/etc you are trying to use
 
-shout out to me banging my head against a wall for an hour trying to figure out why my code wasn't working when I was consistently writing document.getElementsByClassName() as .getElementByClass() (happy tear emoji here)
+Shout out to me banging my head against a wall for an hour trying to figure out why my code wasn't working when I was consistently writing .getElementByClass() instead of .getElementsByClassName() (happy tear emoji here)
 
 
 #### Lesson 3
-You should probablly save any/all code progress even -- if not ESPECIALLY -- code that isn't working (please see above lesson (happy tear emoji) )
+
+You should probablly save any/all code progress even if code that isn't working  
 
 #### Lesson 4 
 
@@ -42,6 +66,24 @@ You should probablly save any/all code progress even -- if not ESPECIALLY -- cod
 
 #### Lesson 5 
 
-I HAVE SPENT HOURS AND HOURS BANGING MY HEAD TRYING TO GET THIS TO WORK AND ALL I HAD TO DO WAS MOVE THE SCRIPT TAG TO THE END OF THE DOCUMENT INSTEAD OF HAVING IT IN THE HEAD OF THE HTML DOC
+If the JS script is in the head HTML it will load first and therefore run before any of the page elements are created 
+Putting the script at the end of the document means all the page elements are created and **then** the script runs and can act on those elements
 
-FUUUUCCCKKKKK, thats annoying
+#### Lesson 6
+
+This line creates an **OBJECT** containing all rating elements : 
+``` javascript
+let ratingElements = document.getElementsByClassName("rating");
+```
+
+And thus, it will output an error if you try to use it with .forEach like so:
+``` javascript 
+ratingElements.forEach(rating => { })
+```
+
+>>> This is because .forEach can only take an **ARRAY** 
+
+Also, this line returns as **UNDEFINED**:
+```javascript 
+let rate1 = document.getElementsByClassName('rating')[0];
+```
